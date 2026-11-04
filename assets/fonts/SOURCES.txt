@@ -1,0 +1,12 @@
+Invitation font subsets, derived from Google Noto Serif SC, Noto Sans SC,
+Noto Serif JP and Noto Sans JP. Licensed under SIL Open Font License 1.1.
+The accompanying *-OFL.txt files retain the upstream license notices.
+
+Official sources (downloaded 2026-10-29):
+https://github.com/google/fonts/tree/main/ofl/notoserifsc
+https://github.com/google/fonts/tree/main/ofl/notosanssc
+https://github.com/google/fonts/tree/main/ofl/notoserifjp
+https://github.com/google/fonts/tree/main/ofl/notosansjp
+
+Subsets are renamed Seria Serif/Sans SC/JP and instantiated at weight 400.
+After editing invitation text, rerun scripts/build_fonts.py to include new glyphs.

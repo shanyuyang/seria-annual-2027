@@ -1,0 +1,8 @@
+/* Self-hosted OFL subsets: no external font service is used by visitors. */
+@font-face{font-family:"Seria Serif SC";src:url("./assets/fonts/serif-sc.woff2?v=20261104-copy1") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Seria Sans SC";src:url("./assets/fonts/sans-sc.woff2?v=20261104-copy1") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Seria Serif JP";src:url("./assets/fonts/serif-jp.woff2?v=20261104-copy1") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Seria Sans JP";src:url("./assets/fonts/sans-jp.woff2?v=20261104-copy1") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+:root{--serif:"Seria Serif SC","Songti SC","STSong","SimSun",serif;--sans:"Seria Sans SC","Microsoft YaHei","PingFang SC",sans-serif}
+:lang(ja){--serif:"Seria Serif JP","Yu Mincho","Hiragino Mincho ProN",serif;--sans:"Seria Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
