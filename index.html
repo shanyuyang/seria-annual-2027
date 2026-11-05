@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="./style.css?v=20261104-copy1">
 <link rel="preload" href="./assets/fonts/serif-sc.woff2?v=20261104-copy1" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="./fonts.css?v=20261104-copy1">
+<script defer src="./assets/jszip.min.js"></script>
+<script type="module" src="./download.mjs?v=20261105-company"></script>
 <script type="module" src="./app.mjs?v=20261104-copy1"></script>
 </head>
 <body>
@@ -131,9 +133,10 @@
           <strong><span id="receipt-count"></span> 人</strong>
         </div>
         <div class="receipt-code"><span>登记编号</span><strong id="receipt-code"></strong></div>
+        <button id="download-company-list" type="button" style="display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;min-height:52px;margin-top:18px;padding:14px 18px;border:1px solid #721f2c;background:transparent;color:#721f2c;font-size:14px;font-weight:600;letter-spacing:1px;text-align:left">下载本公司人员名单（Excel） <span aria-hidden="true" style="font-size:20px">↓</span></button>
+        <p id="download-message" style="font-size:12px;line-height:1.8;margin-top:10px">姓名、性别、编号请填写后交给筹备组，表格不会自动上传。</p>
       </div>
-      <a href="./assets/seria-attendee-template.xlsx" download="Seria年会出席人员名单.xlsx" style="display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;min-height:52px;margin-top:12px;padding:14px 18px;border:1px solid #721f2c;color:#721f2c;font-size:14px;font-weight:600;letter-spacing:1px;text-align:left">下载空白人员名单（Excel） <span aria-hidden="true" style="font-size:20px">↓</span></a>
-      <p style="font-size:.8rem; margin-top:.6rem; text-align:center">填写后请另行交给筹备组，表格不会自动上传。</p>
+      
     </div>
   </section>
 </main>
