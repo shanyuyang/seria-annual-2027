@@ -33,7 +33,7 @@ const copy = {
 // Keep this endpoint stable. The CloudBase function behind it must be upgraded
 // to accept mode=company_headcount and create one attendee row per requested seat.
 const API_URL = 'https://cloud1-d2gcviutuf82a0f17-1429108820.ap-shanghai.app.tcloudbase.com/seria-annual-2027-rsvp';
-const STORAGE_KEY = 'seria-annual-2027-company-registration-v2-reset-20261105';
+const STORAGE_KEY = 'seria-annual-2027-company-registration-v3-reset-20261105';
 let inMemoryState = null;
 
 function readState() {
