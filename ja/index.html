@@ -92,60 +92,29 @@
     <div class="detail-lines">
       <div class="detail-row"><span class="detail-no">01 / 開催日</span><div><h3>2026年12月25日</h3><p>金曜日 · 開催時間は後日ご案内します</p></div><button type="button" id="calendar-button" class="text-button">カレンダーに追加 <span aria-hidden="true">↗</span></button></div>
       <div class="detail-row"><span class="detail-no">02 / 開催地</span><div><h3>溪云杏谷民宿</h3><p>中国・浙江省杭州市桐廬県分水鎮朝陽村<br>珠洞坞銀杏景区の北西約150m<br>交通手段は実行委員会より別途ご案内します</p></div><a class="text-button" href="https://uri.amap.com/search?keyword=%E6%9D%AD%E5%B7%9E%E6%A1%90%E5%BA%90%E6%BA%AA%E4%BA%91%E6%9D%8F%E8%B0%B7%E6%B0%91%E5%AE%BF&city=%E6%9D%AD%E5%B7%9E&view=map" target="_blank" rel="noopener noreferrer">会場の地図 <span aria-hidden="true">↗</span></a></div>
-      <div class="detail-row"><span class="detail-no">03 / ご案内</span><div><h3>Seriaの仲間の皆さまへ</h3><p>準備のため、下のフォームからご出席をお知らせください</p></div><a class="text-button" href="#rsvp">出席を回答 <span aria-hidden="true">↗</span></a></div>
+      <div class="detail-row"><span class="detail-no">03 / ご案内</span><div><h3>Seriaの仲間の皆さまへ</h3><p>当日、皆さまとお会いできることを楽しみにしております。</p></div>
     </div>
   </section>
 
-  <section class="rsvp-section" id="rsvp" aria-labelledby="rsvp-heading">
-    <div class="rsvp-intro"><p class="eyebrow">RÉPONDEZ, S'IL VOUS PLAÎT</p><h2 id="rsvp-heading">あなたの席を、<br>ご用意して。</h2><p>ご出席のお返事をお待ちしています。<br>桐廬で、皆さまとお会いできますように。</p><span class="rsvp-art" aria-hidden="true">S</span></div>
-    <div class="rsvp-panel">
-      <form id="rsvp-form" novalidate>
-        <div class="form-heading"><span>出席のご回答</span><small>ATTENDANCE CONFIRMATION</small></div>
-        <label for="guest-name">お名前 <span aria-hidden="true">*</span></label>
-        <input id="guest-name" name="name" autocomplete="name" maxlength="40" required placeholder="お名前をご記入ください">
-        <label for="guest-company">所属会社 <span aria-hidden="true">*</span></label>
-        <select id="guest-company" name="company" autocomplete="organization" required>
-          <option value="" disabled selected>所属会社を選択してください</option>
-          <option value="LEAD HOME (HK) LIMITED">LEAD HOME (HK) LIMITED</option>
-          <option value="環保國際貿易有限公司">環保國際貿易有限公司</option>
-          <option value="PML CO.,LIMITED">PML CO.,LIMITED</option>
-          <option value="恒翔貿易有限公司">恒翔貿易有限公司</option>
-          <option value="SHINOBE (Malaysia) SDN.BHD.">SHINOBE (Malaysia) SDN.BHD.</option>
-          <option value="Enjoyn Trading HK Limited">Enjoyn Trading HK Limited</option>
-          <option value="ZHONGYIN (NINGBO) BATTERY">ZHONGYIN (NINGBO) BATTERY</option>
-          <option value="Vision Chemical (HK) Co., Limited">Vision Chemical (HK) Co., Limited</option>
-          <option value="SERIA总社">SERIA本社</option>
-          <option value="seria上海">seria上海</option>
-          <option value="家人">ご家族</option>
-        </select>
-        <label for="guest-gender">性別 <span aria-hidden="true">*</span></label>
-        <select id="guest-gender" name="gender" required>
-          <option value="" disabled selected>性別を選択してください</option>
-          <option value="男">男性</option>
-          <option value="女">女性</option>
-        </select>
-        <label for="guest-note">実行委員会へのメッセージ <small>任意</small></label>
-        <textarea id="guest-note" name="note" maxlength="300" rows="2" placeholder="お食事や移動についてのご希望などをご記入ください"></textarea>
-        <div class="honeypot" aria-hidden="true"><label for="guest-website">Website</label><input id="guest-website" name="website" tabindex="-1" autocomplete="off"></div>
-        <p class="privacy-note">所属会社・氏名・性別は、参加人数の集計、部屋割り、お食事の席の手配にのみ使用し、招待状には公開しません。</p>
-        <button class="submit-button" id="submit-button" type="submit"><span>出席を確定する</span><span aria-hidden="true">↗</span></button>
-        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
-      </form>
-      <div id="rsvp-success" class="success-panel" hidden>
-        <div class="success-mark" aria-hidden="true">✓</div><p class="eyebrow">YOUR SEAT IS RESERVED</p><h3>ご出席の回答を受け付けました</h3><p>ご回答ありがとうございます。<br>当日お会いできることを楽しみにしております。</p><div class="receipt-code"><span>受付番号</span><strong id="receipt-code"></strong></div><p class="success-footnote">回答の変更は、年会実行委員会へご連絡ください。</p>
-      </div>
+  <section class="rsvp-section rsvp-section--japanese" id="invitation-thanks" aria-labelledby="rsvp-heading">
+    <div class="rsvp-intro">
+      <p class="eyebrow">A SPECIAL GATHERING</p>
+      <h2 id="rsvp-heading">あなたの席を、<br>ご用意して。</h2>
+      <span class="japanese-divider" aria-hidden="true"></span>
+      <p>皆さまとお会いできるのを<br>楽しみにしております。</p>
+      <span class="rsvp-art" aria-hidden="true">S</span>
     </div>
   </section>
 </main>
 <footer><img src="../assets/seria-logo.png" alt="Seria" width="82" height="35"><p>2027年 上海Seria年会<br><span>感謝を胸に · あなたとともに</span></p><span class="footer-date">2026.12.25<br>TONGLU, CHINA</span></footer>
-<nav class="mobile-bar" aria-label="クイックメニュー"><button type="button" id="mobile-share">招待状を共有 <span aria-hidden="true">↗</span></button><a href="#rsvp" id="mobile-rsvp">出席を回答 <span aria-hidden="true">→</span></a></nav>
+<nav class="mobile-bar mobile-bar--share-only" aria-label="クイックメニュー"><button type="button" id="mobile-share">招待状を共有 <span aria-hidden="true">↗</span></button></nav>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-title" aria-describedby="share-instructions">
   <div class="share-dialog-head"><h2 id="share-title">QRコード付き招待状を共有</h2><form method="dialog"><button type="submit" class="share-close" aria-label="共有画面を閉じる">×</button></form></div>
-  <p id="share-instructions">画像を長押しして保存し、WeChatで友だちやグループに送信してください。受け取った方はQRコードから招待状を開き、出席を回答できます。</p>
+  <p id="share-instructions">画像を長押しして保存し、WeChatで友だちやグループに送信してください。受け取った方はQRコードから招待状をご覧いただけます。</p>
   <img class="share-poster" src="../assets/share/invitation-jp.jpg?v=20261104-copy1" width="1190" height="1355" alt="2027年 上海Seria年会の日本語招待状。招待ページを開くQRコード付き">
   <a class="share-download" href="../assets/share/invitation-jp.jpg?v=20261104-copy1" download="Seria-2027-invitation-ja.jpg">招待状の画像を保存 <span aria-hidden="true">↓</span></a>
 </dialog>
-<noscript><p class="noscript">カウントダウンと出席フォームをご利用いただくには、JavaScriptを有効にしてください。</p></noscript>
+<noscript><p class="noscript">カウントダウンをご覧いただくには、JavaScriptを有効にしてください。</p></noscript>
 </body>
 </html>

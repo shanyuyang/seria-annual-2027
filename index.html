@@ -96,43 +96,41 @@
     </div>
   </section>
 
-  <section class="rsvp-section" id="rsvp" aria-labelledby="rsvp-heading">
-    <div class="rsvp-intro"><p class="eyebrow">RÉPONDEZ, S'IL VOUS PLAÎT</p><h2 id="rsvp-heading">这一席，<br>为你而留。</h2><p>一个确认，一份期待。<br>让我们把你的名字，写进相聚的名单。</p><span class="rsvp-art" aria-hidden="true">S</span></div>
+  <section class="rsvp-section rsvp-section--company" id="rsvp" aria-labelledby="rsvp-heading">
+    <div class="rsvp-intro">
+      <p class="eyebrow">RÉPONDEZ, S'IL VOUS PLAÎT</p>
+      <h2 id="rsvp-heading">这一席，<br>为你而留。</h2>
+      <p>请填写贵公司的参会人数，<br>我们将按登记人数预留席位。</p>
+      <span class="rsvp-art" aria-hidden="true">S</span>
+    </div>
     <div class="rsvp-panel">
-      <form id="rsvp-form" novalidate>
-        <div class="form-heading"><span>出席回执</span><small>ATTENDANCE CONFIRMATION</small></div>
-        <label for="guest-name">你的姓名 <span aria-hidden="true">*</span></label>
-        <input id="guest-name" name="name" autocomplete="name" maxlength="40" required placeholder="请填写真实姓名">
+      <form id="rsvp-form" class="company-form" novalidate>
+        <div class="form-heading"><span>出席登记</span><small>ATTENDANCE REGISTRATION</small></div>
         <label for="guest-company">所属公司 <span aria-hidden="true">*</span></label>
-        <select id="guest-company" name="company" autocomplete="organization" required>
-          <option value="" disabled selected>请选择所属公司</option>
-          <option value="LEAD HOME (HK) LIMITED">LEAD HOME (HK) LIMITED</option>
-          <option value="環保國際貿易有限公司">環保國際貿易有限公司</option>
-          <option value="PML CO.,LIMITED">PML CO.,LIMITED</option>
-          <option value="恒翔貿易有限公司">恒翔貿易有限公司</option>
-          <option value="SHINOBE (Malaysia) SDN.BHD.">SHINOBE (Malaysia) SDN.BHD.</option>
-          <option value="Enjoyn Trading HK Limited">Enjoyn Trading HK Limited</option>
-          <option value="ZHONGYIN (NINGBO) BATTERY">ZHONGYIN (NINGBO) BATTERY</option>
-          <option value="Vision Chemical (HK) Co., Limited">Vision Chemical (HK) Co., Limited</option>
-          <option value="SERIA总社">SERIA总社</option>
-          <option value="seria上海">seria上海</option>
-          <option value="家人">家人</option>
-        </select>
-        <label for="guest-gender">性别 <span aria-hidden="true">*</span></label>
-        <select id="guest-gender" name="gender" required>
-          <option value="" disabled selected>请选择性别</option>
-          <option value="男">男</option>
-          <option value="女">女</option>
-        </select>
-        <label for="guest-note">想告诉筹备组的话 <small>选填</small></label>
-        <textarea id="guest-note" name="note" maxlength="300" rows="2" placeholder="如有饮食或出行需求，可在此留言"></textarea>
-        <div class="honeypot" aria-hidden="true"><label for="guest-website">Website</label><input id="guest-website" name="website" tabindex="-1" autocomplete="off"></div>
-        <p class="privacy-note">所属公司、姓名及性别仅供筹备组统计人数、分配房间和安排餐桌使用，不会在请柬上公开。</p>
-        <button class="submit-button" id="submit-button" type="submit"><span>确认出席，桐庐见</span><span aria-hidden="true">↗</span></button>
+        <input id="guest-company" name="company" type="text" autocomplete="organization"
+          maxlength="100" required placeholder="请输入公司名称">
+        <label for="guest-count">人数 <span aria-hidden="true">*</span></label>
+        <input id="guest-count" name="headcount" type="number" inputmode="numeric"
+          min="1" max="300" step="1" required placeholder="请输入参会人数（数字）">
+        <div class="honeypot" aria-hidden="true">
+          <label for="guest-website">Website</label>
+          <input id="guest-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="submit-button" id="submit-button" type="submit">
+          <span>确认提交</span><span aria-hidden="true">↗</span>
+        </button>
         <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
       </form>
-      <div id="rsvp-success" class="success-panel" hidden>
-        <div class="success-mark" aria-hidden="true">✓</div><p class="eyebrow">YOUR SEAT IS RESERVED</p><h3>已收到你的出席回执</h3><p>谢谢你的回应。<br>愿所有美好，都如约而至。</p><div class="receipt-code"><span>回执编号</span><strong id="receipt-code"></strong></div><p class="success-footnote">如需修改回执，请联系年会筹备组。</p>
+      <div id="rsvp-success" class="success-panel company-success" hidden>
+        <div class="success-mark" aria-hidden="true">✓</div>
+        <p class="eyebrow">REGISTRATION RECEIVED</p>
+        <h3>参会人数登记成功</h3>
+        <p>已收到贵公司的登记信息。<br>我们将按登记人数预留席位。</p>
+        <div class="company-receipt">
+          <span id="receipt-company"></span>
+          <strong><span id="receipt-count"></span> 人</strong>
+        </div>
+        <div class="receipt-code"><span>登记编号</span><strong id="receipt-code"></strong></div>
       </div>
     </div>
   </section>
