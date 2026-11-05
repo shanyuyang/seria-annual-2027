@@ -16,6 +16,19 @@
 <script type="module" src="./download.mjs?v=20261105-font3"></script>
 <script type="module" src="./app.mjs?v=20261105-reset3"></script>
 <style>@font-face{font-family:"Seria Serif Complete";src:url("./assets/fonts/serif-sc-complete.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}:root{--serif:"Seria Serif Complete","Songti SC","STSong","SimSun",serif}.company-success .company-receipt strong{font-family:var(--serif);font-weight:400}.form-heading>span{font:400 20px/1.5 var(--serif);letter-spacing:2px}.section-index{font-size:14px}.hero-year span{font:400 20px/1.8 var(--serif);letter-spacing:5px;white-space:nowrap}@media(max-width:800px){.section-index{font-size:14px}.hero-year span{font-size:24px;line-height:1.5;letter-spacing:4px;opacity:1}}.hero-kicker{font-size:14px}@media(max-width:800px){.hero-kicker{font-size:11px}}</style>
+<style>
+@font-face{font-family:SeriaWenKai;src:url("./assets/fonts/wenkai-subset.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:SeriaSongLight;src:url("./assets/fonts/source-song-light.woff2") format("woff2");font-weight:300;font-display:swap}
+@font-face{font-family:SeriaBodoni;src:url("./assets/fonts/bodoni-subset.woff2") format("woff2");font-weight:400;font-display:swap}
+:root{--sans:"Seria Serif Complete","Songti SC","STSong",serif}
+h1,h2,.form-heading>span,.success-panel h3{font-family:SeriaWenKai,var(--serif);font-weight:400}
+.hero-subtitle{font-family:SeriaSongLight,var(--serif);font-weight:300}
+.hero-year,.hero-date strong,.countdown strong{font-family:SeriaBodoni,Georgia,serif;font-style:normal}
+.hero .landscape{display:none}
+.hero:before{content:"";position:absolute;inset:0;background:url("./assets/ram-art.webp") no-repeat 60% 62%/min(68%,930px) auto;opacity:.67;pointer-events:none;z-index:0}
+.hero-copy,.hero-bottom,.hero-eyebrow,.hero-corner{position:relative;z-index:2}
+@media(max-width:800px){.hero:before{background-position:63% 79%;background-size:115% auto;opacity:.39}}
+</style>
 </head>
 <body>
 <a class="skip" href="#invitation">跳至邀请正文</a>
