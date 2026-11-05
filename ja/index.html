@@ -14,6 +14,14 @@
 <link rel="stylesheet" href="../fonts.css?v=20261104-copy1">
 <script type="module" src="../app.mjs?v=20261105-ja"></script>
 <style>:lang(ja) .section-index{font-size:14px}:lang(ja) .hero-year{font-size:135px}:lang(ja) .hero-year span{font-size:16px;letter-spacing:5px}@media(max-width:800px){:lang(ja) .section-index{font-size:14px}:lang(ja) .hero-year{font-size:88px}:lang(ja) .hero-year span{font-size:15px;letter-spacing:4px}}</style>
+<style>
+@font-face{font-family:SeriaBodoni;src:url("../assets/fonts/bodoni-subset.woff2") format("woff2");font-weight:400;font-display:swap}
+.hero-year,.hero-date strong,.countdown strong{font-family:SeriaBodoni,Georgia,serif;font-style:normal}
+.hero .landscape{display:none}
+.hero:before{content:"";position:absolute;inset:0;background:url("../assets/ram-art.webp") no-repeat 60% 62%/min(68%,930px) auto;opacity:.67;pointer-events:none;z-index:0}
+.hero-copy,.hero-bottom,.hero-eyebrow,.hero-corner{position:relative;z-index:2}
+@media(max-width:800px){.hero:before{background-position:63% 79%;background-size:115% auto;opacity:.39}}
+</style>
 </head>
 <body>
 <a class="skip" href="#invitation">招待メッセージへ</a>
@@ -113,8 +121,8 @@
 <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-title" aria-describedby="share-instructions">
   <div class="share-dialog-head"><h2 id="share-title">QRコード付き招待状を共有</h2><form method="dialog"><button type="submit" class="share-close" aria-label="共有画面を閉じる">×</button></form></div>
   <p id="share-instructions">画像を長押しして保存し、WeChatで友だちやグループに送信してください。受け取った方はQRコードから招待状をご覧いただけます。</p>
-  <img class="share-poster" src="../assets/share/invitation-jp-large.jpg?v=20261105" width="1190" height="1355" alt="2027年 上海Seria年次懇親会の日本語招待状。招待ページを開くQRコード付き">
-  <a class="share-download" href="../assets/share/invitation-jp-large.jpg?v=20261105" download="Seria-2027-invitation-ja.jpg">招待状の画像を保存 <span aria-hidden="true">↓</span></a>
+  <img class="share-poster" src="../assets/share/invitation-jp-ram.jpg?v=20261105" width="1190" height="1355" alt="2027年 上海Seria年次懇親会の日本語招待状。招待ページを開くQRコード付き">
+  <a class="share-download" href="../assets/share/invitation-jp-ram.jpg?v=20261105" download="Seria-2027-invitation-ja.jpg">招待状の画像を保存 <span aria-hidden="true">↓</span></a>
 </dialog>
 <noscript><p class="noscript">カウントダウンをご覧いただくには、JavaScriptを有効にしてください。</p></noscript>
 </body>
