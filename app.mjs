@@ -6,15 +6,15 @@ const ja = document.documentElement.lang === 'ja';
 const copy = {
   today: ja ? 'お会いするのは、今日' : '相聚，就在今天',
   past: ja ? 'ご参加ありがとうございました' : '感谢相聚，期待再会',
-  upcoming: ja ? 'お会いする日まで、あと' : '距离相聚，还有',
+  upcoming: ja ? 'お会いできる日まで、あと' : '距离相聚，还有',
   closed: '本次出席登记已结束',
   view: '查看邀请',
-  calendarTitle: ja ? '2027年 上海Seria年会' : '2027 上海 Seria 年会',
+  calendarTitle: ja ? '2027年 上海Seria年次懇親会' : '2027 上海 Seria 年会',
   calendarLocation: ja
     ? '溪云杏谷民宿（中国・浙江省杭州市桐廬県分水鎮朝陽村、珠洞坞銀杏景区の北西約150m）'
     : '溪云杏谷民宿，浙江省杭州市桐庐县分水镇朝阳村（珠洞坞银杏景区西北约150米）',
   calendarDescription: ja
-    ? '開催時間と交通手段は、年会実行委員会より別途ご案内します。'
+    ? '開催時間と交通手段は、年次懇親会実行委員会より別途ご案内します。'
     : '年会活动时段及交通安排待筹备组通知。',
   calendarToast: ja
     ? 'カレンダーファイルを作成しました。WeChatで開けない場合はシステムブラウザをご利用ください。'
