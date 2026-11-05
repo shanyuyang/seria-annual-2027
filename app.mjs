@@ -33,7 +33,7 @@ const copy = {
 // Keep this endpoint stable. The CloudBase function behind it must be upgraded
 // to accept mode=company_headcount and create one attendee row per requested seat.
 const API_URL = 'https://cloud1-d2gcviutuf82a0f17-1429108820.ap-shanghai.app.tcloudbase.com/seria-annual-2027-rsvp';
-const STORAGE_KEY = 'seria-annual-2027-company-registration-v1';
+const STORAGE_KEY = 'seria-annual-2027-company-registration-v2-reset-20261105';
 let inMemoryState = null;
 
 function readState() {
@@ -88,6 +88,18 @@ function share() {
 }
 byId('share-button')?.addEventListener('click', share);
 byId('mobile-share')?.addEventListener('click', share);
+byId('copy-share-link')?.addEventListener('click', async () => {
+  const link = new URL('./', location.href).href;
+  const status = byId('share-link-status');
+  try {
+    await navigator.clipboard.writeText(link);
+    if (status) status.textContent = '链接已复制，可以粘贴发送。';
+  } catch {
+    const field = byId('share-link-value');
+    if (field) { field.value = link; field.hidden = false; field.focus(); field.select(); }
+    if (status) status.textContent = '请长按或选中上方链接后复制。';
+  }
+});
 byId('share-dialog')?.addEventListener('click', event => {
   if (event.target === event.currentTarget) event.currentTarget.close();
 });

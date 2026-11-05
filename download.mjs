@@ -23,7 +23,7 @@ if (typeof document !== 'undefined') {
     try {
       const company = document.getElementById('receipt-company').textContent.trim();
       const count = Number(document.getElementById('receipt-count').textContent);
-      const response = await fetch('./assets/seria-attendee-template-v2.xlsx');
+      const response = await fetch('./assets/seria-attendee-template-v3.xlsx');
       if (!response.ok || !window.JSZip) throw new Error('模板下载失败，请刷新后重试。');
       const bytes = await makeWorkbook(company, count, await response.arrayBuffer(), window.JSZip);
       const url = URL.createObjectURL(new Blob([bytes], {type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}));

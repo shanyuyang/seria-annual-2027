@@ -13,8 +13,8 @@
 <link rel="preload" href="./assets/fonts/serif-sc.woff2?v=20261104-copy1" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="./fonts.css?v=20261104-copy1">
 <script defer src="./assets/jszip.min.js"></script>
-<script type="module" src="./download.mjs?v=20261105-company"></script>
-<script type="module" src="./app.mjs?v=20261104-copy1"></script>
+<script type="module" src="./download.mjs?v=20261105-font3"></script>
+<script type="module" src="./app.mjs?v=20261105-reset2"></script>
 </head>
 <body>
 <a class="skip" href="#invitation">跳至邀请正文</a>
@@ -133,7 +133,7 @@
           <strong><span id="receipt-count"></span> 人</strong>
         </div>
         <div class="receipt-code"><span>登记编号</span><strong id="receipt-code"></strong></div>
-        <button id="download-company-list" type="button" style="display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;min-height:52px;margin-top:18px;padding:14px 18px;border:1px solid #721f2c;background:transparent;color:#721f2c;font-size:14px;font-weight:600;letter-spacing:1px;text-align:left">下载本公司人员名单（Excel） <span aria-hidden="true" style="font-size:20px">↓</span></button>
+        <button id="download-company-list" type="button" style="display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;min-height:52px;margin-top:18px;padding:14px 18px;border:1px solid #721f2c;background:transparent;color:#721f2c;font:400 17px/1.5 var(--serif);letter-spacing:1px;text-align:left">下载本公司人员名单（Excel） <span aria-hidden="true" style="font-size:20px">↓</span></button>
         <p id="download-message" style="font-size:12px;line-height:1.8;margin-top:10px">姓名、性别、编号请填写后交给筹备组，表格不会自动上传。</p>
       </div>
       
@@ -145,9 +145,12 @@
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-title" aria-describedby="share-instructions">
   <div class="share-dialog-head"><h2 id="share-title">分享二维码请柬</h2><form method="dialog"><button type="submit" class="share-close" aria-label="关闭分享">×</button></form></div>
-  <p id="share-instructions">手机长按封面保存，再到微信发送给朋友或群聊。收件人长按二维码，即可查看请柬并确认出席。</p>
+  <p id="share-instructions">选择分享方式：保存图片后发送，或复制邀请函链接。</p>
+  <button type="button" id="copy-share-link" class="share-download" style="width:100%;margin:12px 0;background:transparent;border:1px solid #721f2c;color:#721f2c">复制邀请函链接 <span aria-hidden="true">↗</span></button>
+  <input id="share-link-value" aria-label="邀请函链接" readonly hidden style="width:100%;font-size:14px" />
+  <p id="share-link-status" role="status" aria-live="polite" style="font-size:12px"></p>
   <img class="share-poster" src="./assets/share/invitation-sc.jpg?v=20261104-copy1" width="1190" height="1355" alt="2027 上海 Seria 年会中文邀请函，含进入请柬的二维码">
-  <a class="share-download" href="./assets/share/invitation-sc.jpg?v=20261104-copy1" download="Seria-2027-invitation-zh.jpg">保存请柬图片 <span aria-hidden="true">↓</span></a>
+  <a class="share-download" href="./assets/share/invitation-sc.jpg?v=20261104-copy1" download="Seria-2027-invitation-zh.jpg">保存请柬图片（分享图片） <span aria-hidden="true">↓</span></a>
 </dialog>
 <noscript><p class="noscript">请启用 JavaScript，以查看实时倒计时并提交出席回执。</p></noscript>
 </body>
